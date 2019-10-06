@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AWS Workshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/structure.css" />
+    <link rel="stylesheet" href="/stylesheets/form.css" />
+  </head>
+
+  <body>
+    <main role="main">
+      <form class="Form" id="weather-form">
+        <span>
+          What's the weather in
+          <input
+            type="text"
+            autofocus
+            aria-label="City Name"
+            placeholder="city name..."
+            name="city"
+          />
+          <button aria-label="Get Weather" type="submit">GO</button>
+          ?
+        </span>
+      </form>
+      <section role="region" class="Response">
+        <span id="response-output" class="empty">Empty Response</span>
+      </section>
+    </main>
+
+    <script src="/javascripts/getWeather.js"></script>
+  </body>
+</html>
